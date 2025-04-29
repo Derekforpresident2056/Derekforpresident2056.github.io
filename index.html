@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tektur">
+		<style>
+			div.SAMELINE{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: left;
+				align-items: center; 
+    			gap: 10px; /* Space between hexagons */
+    			width: 100%;
+    			margin-bottom: -30px;
+    			height: auto;
+			}
+
+			div.SAMELINE div{
+				width: 160px;
+  				height: 160px;
+  				clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  				background: #16246a;
+  				color: white;
+  			}
+			div.SAMELINE2{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: left;
+				align-items: center; 
+    			gap: 10px; /* Space between hexagons */
+    			width: 100%;
+    			margin-left: 85px;
+    			margin-top: -30px;
+    			margin-bottom: -30px;
+    			height: auto;
+			}
+
+			div.SAMELINE2 div{
+				width: 160px;
+  				height: 160px;
+  				clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  				background: #16246a;
+  				color: white;
+  			}
+
+  			div.SAMELINE div:hover {
+  				background-color: #111111;
+  				transition: all .25s;
+			}
+  			div.SAMELINE2 div:hover {
+  				background-color: #111111;
+  				transition: all .25s;
+			}
+
+			#blu{
+				background-color: blue;
+  				padding: 5px;
+  				transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+			}	
+
+			#blu:hover{
+				 transform: scale(1.5);
+				 position: relative;
+				 z-index: 2;
+			}
+			img {
+  				width:100%;
+				height:100%;
+				position: relative;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transform-origin: 0% 50%;
+				transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				clip-path: inherit;
+				z-index:  10;
+			}
+			#blu:hover img {transform: translate(-55%, -50%) rotate(-180deg);}
+
+			P{
+				font-family: "Tektur", sans-serif;
+				display: flex;
+				flex-wrap: nowrap;
+				text-align: center;
+				position: absolute;
+				align-items: center; 
+				justify-content: center;
+				width:96%;
+				height:60%;
+				line-height: 0.9;
+				font-size:15.5px;
+			}
+
+			a{
+				font-family: "Tektur", sans-serif;
+				color: white;
+				display: flex;
+				flex-wrap: nowrap;
+				text-align: center;
+				position: absolute;
+				align-items: center; 
+				justify-content: center;
+				width:96%;
+				height:150%;
+				line-height: 0.9;
+				font-size:15.5px;
+			}
+
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="SAMELINE">
+			<div></div>
+			<div id ="blu">
+				<P><b>MEGURU BACHIRA</b>AGE:17 ________ POSITION: LEFT WINGER</P>
+				<a href="#">More Info</a>
+				<img src="bachira.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>ITOSHI RIN</b>AGE:16 ________ POSITION: STRIKER</P>
+				<a href="#">More Info</a>
+				<img src="rin.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>JYUBEI ARYU</b>AGE:18 ________ POSITION: CENTRE BACK</P>
+				<a href="#">More Info</a>
+				<img src="aryu.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>AOSHI TOKIMITSU</b>AGE:18 ________ POSITION: DEFENSIVE MIDFIELDER</P>
+				<a href="#">More Info</a>
+				<img src="tokimitsu.jpg">
+			</div>
+		</div>
+		<div class="SAMELINE2">
+			<div></div>
+			<div id ="blu">
+				<P><b>HYOMA CHIGIRI</b>AGE:17 ________ POSITION: LEFT WINGER</P>
+				<a href="#">More Info</a>
+				<img src="chigiri.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>MIKAGE REO</b>AGE:17 ________ POSITION: ATTACKING MIDFIELDER</P>
+				<a href="#">More Info</a>
+				<img src="reo.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>GIN GAGA- MARU</b>AGE:18 ________ POSITION: GOALKEEPER</P>
+				<a href="#">More Info</a>
+				<img src="gagamaru.webp">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>YO HIORI</b>AGE:17 ________ POSITION: RIGHT WINGER</P>
+				<a href="#">More Info</a>
+				<img src="hiori.jpg">
+			</div>
+		</div>
+		<div class="SAMELINE">
+			<div></div>
+			<div id ="blu">
+				<P><b>RENSUKE KUNIGAMI</b>AGE:17 ________ POSITION: DEFENSIVE MIDFIELDER</P>
+				<a href="#">More Info</a>
+				<img src="kunigami.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>IKKO NIKKI</b>AGE:16 ________ POSITION: CENTRE BACK</P>
+				<a href="IKKI_NIKO.html">More Info</a>
+				<img src="niko.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>YOICHI ISAGI</b>AGE:17 ________ POSITION: ATTACKING MIDFIELDER</P>
+				<a href="#">More Info</a>
+				<img src="isagi.jpeg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>TSURUGI ZANTETSU</b>AGE:17 ________ POSITION: WING BACK</P>
+				<a href="TSURUGI_ZANTETSU.html">More Info</a>
+				<img src="zantetsu.jpg">
+			</div>
+		</div>
+		<div class="SAMELINE2">
+			<div></div>
+			<div id ="blu">
+				<P><b>SEISHIRO NAGI</b>AGE:17 ________ POSITION: ATTACKING MIDFIELDER</P>
+				<a href="SEISHIRO_NAGI.html">More Info</a>
+				<img src="nagi.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>SHOUEI BAROU</b>AGE:18 ________ POSITION: STRIKER</P>
+				<a href="SHOUEI_BAROU.html">More Info</a>
+				<img src="barou.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>JINGO RAICHI</b>AGE:17 ________ POSITION: DEFENSIVE MIDFIELDER</P>
+				<a href="JINGO_RAICHI.html">More Info</a>
+				<img src="raichi.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>NIJIRO NANASE</b>AGE:16 ________ POSITION: WING BACK</P>
+				<a href="NIJIRO_NANASE.html">More Info</a>
+				<img src="nanase.jpg">
+			</div>
+		</div>
+		<div class="SAMELINE">
+			<div></div>
+			<div id ="blu">
+				<P><b>OTOYA EITA</b>AGE:18 ________ POSITION: RIGHT WINGER</P>
+				<a href="OTOYA_EITA.html">More Info</a>
+				<img src="otoya.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>KARASU TABITO</b>AGE:18 ________ POSITION: DEFENSIVE MIDFIELDER</P>
+				<a href="KARASU_TABITO.html">More Info</a>
+				<img src="karasu.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>KENYU YUKIMIYA</b>AGE:19 ________ POSTITION: LEFT WINGER</P>
+				<a href="YUKIMIYA_KENYU.html">More Info</a>
+				<img src="yukimiya.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>RYUSEI SHIDOU</b>AGE:18 ________ POSITION: STRIKER</P>
+				<a href="SHIDOU_RYUSEI.html">More Info</a>
+				<img src="shidou.jpg">
+			</div>
+		</div>
+		<div class="SAMELINE2">
+			<div></div>
+			<div id ="blu">
+				<P><b>OLIVER AIKU</b>AGE:19 ________ POSITION: CENTRE BACK</P>
+				<a href="OLIVER_AIKU.html">More Info</a>
+				<img src="aiku.jpg">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>KURONA RANZE</b>AGE:16 ________ POSITION: WING BACK</P>
+				<a href="KURONA_RANZE.html">More Info</a>
+				<img src="ranze.png">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>ITOSHI SAE</b>AGE:18 ________ POSITION: ATTACKING MIDFIELDER </P>
+				<a href="ITOSHI_SAE.html">More Info</a>
+				<img src="sae.png">
+			</div>
+			<div></div>
+			<div id ="blu">
+				<P><b>SHUTO SENDOU</b> AGE:18 ________ POSITION: SECOND STRIKER </P>
+				<a href="SHUTO_SENDOU.html">More Info</a>
+				<img src="sendou.jpg">
+			</div>
+		</div>
+	</body>
+
+</html>

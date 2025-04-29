@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<div id="credit-counter">Total Credits: 0</div>
+<div id="drop-zone" ondrop="handleDrop(event)" ondragover="event.preventDefault()">Drop Images Here</div>
+
+
+<script>
+    let totalCredits = 0;
+    const creditValues = {
+        "nagi.jpg": 10,
+        "niko.jpg": 15,
+        "nanase.jpg": 20,
+    };
+
+    function handleDrop(event) {
+
+        event.preventDefault();
+        let file = event.dataTransfer.files[0];
+        
+        if (file) {
+            let imageName = file.name;
+            let credit = creditValues[imageName] || 5; // Default credit if not predefined
+
+            totalCredits += credit;
+            document.getElementById("credit-counter").innerText = `Total Credits: ${totalCredits}`;
+        }
+    }
+</script>
+</head>
+

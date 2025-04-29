@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <div id="credit-counter">Total Credits: 0</div>
+    <div id="drop-zone">Drop Images Here</div>
+
+    <img src="nanase.jpg" id="golden" draggable="true" data-credit="50">
+    <img src="niko.jpg" id="silver" draggable="true" data-credit="30">
+    <img src="nagi.jpg" id="brone" draggable="true" data-credit="10">
+
+    <script>
+        
+        document.querySelectorAll("img").forEach(img => {
+            img.addEventListener("dragstart", (event) => {
+                event.dataTransfer.setData("text", event.target.id);
+            });
+        });
+
+        document.getElementById("drop-zone").addEventListener("dragover", (event) => {
+            event.preventDefault();
+        });
+
+        let totalCredits = 0;
+
+        function handleDrop(event) {
+            event.preventDefault();
+    
+        let imageId = event.dataTransfer.getData("text"); // Get image ID
+        let imageElement = document.getElementById(imageId); // Find the image
+    
+        if (imageElement) {
+            let credit = parseInt(imageElement.dataset.credit) || 5; // Default value if missing
+            totalCredits += credit;
+            document.getElementById("credit-counter").innerText = `Total Credits: ${totalCredits}`;
+        }
+        }
+
+        document.getElementById("drop-zone").addEventListener("drop", handleDrop);
+
+    </script>
+
+</head>
+

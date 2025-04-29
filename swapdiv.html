@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swap Divs</title>
+    <style>
+        .hidden { display: none; }
+        .visible { display: block; }
+    </style>
+</head>
+<body>
+
+<div id="div1" class="visible">
+    <h2>Div 1: First Content</h2>
+    <button onclick="swapDivs()">Swap Content</button>
+</div>
+
+<div id="div2" class="hidden">
+    <h2>Div 2: New Content!</h2>
+    <button onclick="swapDivs()">Swap Back</button>
+</div>
+
+<div id="div3" class="hidden">
+    <h2>Div 3: New Content!</h2>
+    <button onclick="swapDivs()">Swap Back</button>
+</div>
+
+<div id="div4" class="hidden">
+    <h2>Div 4: New Content!</h2>
+    <button onclick="swapDivs()">Swap Back</button>
+</div>
+
+<script>
+    function swapDivs() {
+        let div1 = document.getElementById("div1");
+        let div2 = document.getElementById("div2");
+        let div3 = document.getElementById("div3");
+        let div4 = document.getElementById("div4");
+
+        if (div1.classList.contains("visible")) {
+            div1.classList.replace("visible", "hidden");
+            div2.classList.replace("hidden", "visible");
+        } else if(div2.classList.contains("visible")){
+            div2.classList.replace("visible", "hidden");
+            div3.classList.replace("hidden", "visible");
+        } else if(div3.classList.contains("visible")){
+            div3.classList.replace("visible", "hidden");
+            div4.classList.replace("hidden", "visible");
+        }else{
+            div4.classList.replace("visible", "hidden");
+            div1.classList.replace("hidden", "visible");
+        }
+    }
+</script>
+
+</body>
+</html>
