@@ -3,6 +3,14 @@
 	<head>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tektur">
 		<style>
+
+			div.whole{
+				margin-top: 5%;
+				height: 120%;
+				width: 120%;
+				margin-bottom: 5%;
+			}
+
 			div.SAMELINE{
 				display: flex;
 				flex-wrap: wrap;
@@ -15,8 +23,8 @@
 			}
 
 			div.SAMELINE div{
-				width: 160px;
-  				height: 160px;
+				width: 11vw;
+  				height: 11vw;
   				clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   				background: #16246a;
   				color: white;
@@ -35,8 +43,8 @@
 			}
 
 			div.SAMELINE2 div{
-				width: 160px;
-  				height: 160px;
+				width: 11vw;
+  				height: 11vw;
   				clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   				background: #16246a;
   				color: white;
@@ -58,9 +66,9 @@
 			}	
 
 			#blu:hover{
-				 transform: scale(1.5);
-				 position: relative;
-				 z-index: 2;
+				transform: scale(1.5);
+				position: relative;
+				z-index: 2;
 			}
 			img {
   				width:100%;
@@ -74,11 +82,20 @@
 				clip-path: inherit;
 				z-index:  10;
 			}
-			#blu:hover img {transform: translate(-55%, -50%) rotate(-180deg);}
+			#blu:hover img {
+				transform: translate(-55%, -50%) rotate(-180deg);
+			}
+
+			#blu:hover P {
+				display: flex;
+			}
+
+			#blu:hover a {
+				display: flex;
+			}
 
 			P{
 				font-family: "Tektur", sans-serif;
-				display: flex;
 				flex-wrap: nowrap;
 				text-align: center;
 				position: absolute;
@@ -88,12 +105,12 @@
 				height:60%;
 				line-height: 0.9;
 				font-size:15.5px;
+				display: none;
 			}
 
 			a{
 				font-family: "Tektur", sans-serif;
 				color: white;
-				display: flex;
 				flex-wrap: nowrap;
 				text-align: center;
 				position: absolute;
@@ -103,6 +120,7 @@
 				height:150%;
 				line-height: 0.9;
 				font-size:15.5px;
+				display: none;
 			}
 
 			}
@@ -110,6 +128,8 @@
 	</head>
 
 	<body>
+
+	<div class="whole">
 		
 		<div class="SAMELINE">
 			<div></div>
@@ -267,6 +287,8 @@
 				<img src="sendou.jpg">
 			</div>
 		</div>
+	</div>
+
 	</body>
 
 </html>
