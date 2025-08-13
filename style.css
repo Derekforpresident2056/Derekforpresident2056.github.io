@@ -1,5 +1,5 @@
 body{
-  body {
+  overflow: auto;
   background-color: cyan;
   overflow-x: hidden;
   padding: 25px;
