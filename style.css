@@ -1,4 +1,6 @@
 body{
+  body {
+  overflow: auto;
   background-color: cyan;
   overflow-x: hidden;
   padding: 25px;
@@ -318,4 +320,5 @@ body{
   display: flex;
   justify-content: left;
   gap: 5%;
+
 }
