@@ -1,9 +1,9 @@
 body{
-  overflow: auto;
   background-color: cyan;
   overflow-x: hidden;
   padding: 25px;
   margin-right: 45px;
+  overflow: auto;
 }
 
 .statbar{
@@ -321,4 +321,5 @@ body{
   gap: 5%;
 
 }
+
 
